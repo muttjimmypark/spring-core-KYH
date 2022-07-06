@@ -25,10 +25,10 @@ public class AutoAppConfig {
     //수동Bean vs 자동Bean 우선권은?
     //수동 빈 이름이 일부러 겹치도록 해보면
     //수동작성 빈이 자동 위에 오버라이딩 되면서 우선시 된다
-    @Bean(name = "memoryMemberRepository")
-    public MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository")
+//    public MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
     /*
     작성자가 완벽히 의도해서 작성한거라면 이게 맞는건데
     이게 실수라면 거슬러 올라가서 문제해결하기가 너무 꼬여있고 잡기 어려운 버그가 된다
