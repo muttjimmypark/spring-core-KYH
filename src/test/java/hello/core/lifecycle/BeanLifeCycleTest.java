@@ -12,8 +12,9 @@ public class BeanLifeCycleTest {
     @Configuration
     static class LifeCycleConfig {
 
-//        @Bean(initMethod = "init", 비워두면 추론기능 ON)
-        @Bean(initMethod = "init", destroyMethod = "close")
+//        @Bean(initMethod = "init" 뒤에 비워두면 추론이 진행됨)
+//        @Bean(initMethod = "init", destroyMethod = "close")
+        @Bean
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://url.com");
